@@ -1,1 +1,1 @@
-# react-native-slider-ruler
+# react-native-animated-ruler
