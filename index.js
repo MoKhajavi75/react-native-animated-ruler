@@ -1,1 +1,3 @@
-export * from './src/Ruler';
+import Ruler from './src/Ruler';
+
+export default Ruler;
