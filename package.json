@@ -1,0 +1,27 @@
+{
+  "name": "react-native-animated-ruler",
+  "version": "0.0.0",
+  "description": "Animated Ruler for React Native",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "--no-tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamadKh75/react-native-animated-ruler.git"
+  },
+  "keywords": [
+    "react native",
+    "animated",
+    "ruler"
+  ],
+  "author": "MohamadKh75",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MohamadKh75/react-native-animated-ruler/issues"
+  },
+  "homepage": "https://github.com/MohamadKh75/react-native-animated-ruler#readme"
+}
