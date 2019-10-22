@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import Ruler from './src/Ruler';
+import Ruler from '../src/Ruler';
 
 const App = () => {
   return (
