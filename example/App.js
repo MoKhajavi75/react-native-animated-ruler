@@ -14,6 +14,7 @@ const App = () => {
           style={{ borderRadius: 10, elevation: 3 }}
           width={350}
           height={170}
+          onChangeValue={value => alert(value)}
           minimum={10}
           maximum={80}
           segmentWidth={2}

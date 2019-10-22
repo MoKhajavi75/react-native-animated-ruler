@@ -137,6 +137,11 @@ type Props = {
    * Unit's size
    */
   unitSize: number;
+
+  /**
+   * On value change
+   */
+  onChangeValue: Function;
 };
 
 class Ruler extends React.Component<Props> {
@@ -144,7 +149,8 @@ class Ruler extends React.Component<Props> {
     super(props);
 
     this.state = {
-      scrollX: new Animated.Value(0)
+      scrollX: new Animated.Value(0),
+      value: 0
     };
 
     // References
@@ -168,6 +174,10 @@ class Ruler extends React.Component<Props> {
       if (this.textInputRef && this.textInputRef.current) {
         this.textInputRef.current.setNativeProps({
           text: `${Math.round(value / this.snapSegment) + minimum}`
+        });
+
+        this.setState({
+          value: Math.round(value / this.snapSegment) + minimum
         });
       }
     });
@@ -254,7 +264,8 @@ class Ruler extends React.Component<Props> {
       unitColor,
       unitSize,
       width,
-      height
+      height,
+      onChangeValue
     } = this.props;
 
     return (
@@ -289,6 +300,7 @@ class Ruler extends React.Component<Props> {
             ],
             { useNativeDriver: true }
           )}
+          onMomentumScrollEnd={() => onChangeValue(this.state.value)}
         >
           {this.renderRuler()}
         </Animated.ScrollView>
@@ -354,6 +366,7 @@ Ruler.defaultProps = {
   containerStyle: {},
   width,
   height: height * 0.23,
+  onChangeValue: () => {},
   minimum: 0,
   maximum: 100,
   segmentWidth: 2,
