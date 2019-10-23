@@ -3,11 +3,8 @@
   "version": "0.0.0",
   "description": "Animated Ruler for React Native",
   "main": "index.js",
-  "directories": {
-    "example": "example"
-  },
   "scripts": {
-    "test": "--no-tests"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
