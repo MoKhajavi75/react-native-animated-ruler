@@ -1,10 +1,12 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import Ruler from '../src/Ruler';
+import { View, Text, StyleSheet, StatusBar } from 'react-native';
+import Ruler from './src/Ruler';
 
 const App = () => {
   return (
     <View style={styles.container}>
+      <StatusBar backgroundColor='#000000' barStyle='light-content' />
+
       <View style={styles.sections}>
         <Text style={styles.title}>React Native Animated Ruler!</Text>
       </View>

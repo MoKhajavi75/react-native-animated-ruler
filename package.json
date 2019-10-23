@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/MohamadKh75/react-native-animated-ruler/issues"
   },
-  "homepage": "https://github.com/MohamadKh75/react-native-animated-ruler#readme"
+  "homepage": "https://github.com/MohamadKh75/react-native-animated-ruler#readme",
+  "readme": "https://github.com/MohamadKh75/react-native-animated-ruler#readme"
 }

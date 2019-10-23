@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests) &nbsp; [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier) &nbsp; [![npm version](https://badge.fury.io/js/react-native-animated-ruler.svg)](https://badge.fury.io/js/react-native-animated-ruler) &nbsp; [![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/MohamadKh75/react-native-animated-ruler/blob/master/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/MohamadKh75/react-native-animated-ruler/pulls) &nbsp; [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier) &nbsp; [![npm version](https://badge.fury.io/js/react-native-animated-ruler.svg)](https://www.npmjs.com/package/react-native-animated-ruler) &nbsp; [![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/MohamadKh75/react-native-animated-ruler/blob/master/LICENSE)
 
 </div>
 
@@ -22,6 +22,8 @@
 ## Usage
 
 ```jsx
+import Ruler from 'react-native-animated-ruler';
+
 <Ruler
   style={{ borderRadius: 10, elevation: 3 }}
   width={350}
@@ -31,7 +33,7 @@
   maximum={80}
   segmentWidth={2}
   segmentSpacing={20}
-  indicatorColor='red'
+  indicatorColor='#FF0000'
   indicatorWidth={100}
   indicatorHeight={80}
   indicatorBottom={20}
@@ -40,7 +42,7 @@
   stepHeight={40}
   normalColor='#999999'
   normalHeight={20}
-  backgroundColor='#ffffff'
+  backgroundColor='#FFFFFF'
   numberFontFamily='System'
   numberSize={40}
   numberColor='#000000'
@@ -49,7 +51,7 @@
   unitFontFamily='System'
   unitColor='#888888'
   unitSize={16}
-/>
+/>;
 ```
 
 ## Properties
@@ -73,7 +75,7 @@
 |    stepHeight    |            40            |  `number`   |
 |   normalColor    |        '#999999'         |  `string`   |
 |   normalHeight   |            20            |  `number`   |
-| backgroundColor  |        '#ffffff'         |  `string`   |
+| backgroundColor  |        '#FFFFFF'         |  `string`   |
 | numberFontFamily |         'System'         |  `string`   |
 |    numberSize    |            40            |  `number`   |
 |   numberColor    |        '#000000'         |  `string`   |
