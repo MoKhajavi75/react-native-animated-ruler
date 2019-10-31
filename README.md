@@ -28,6 +28,7 @@ import Ruler from 'react-native-animated-ruler';
   style={{ borderRadius: 10, elevation: 3 }}
   width={350}
   height={170}
+  vertical={false}
   onChangeValue={value => alert(value)}
   minimum={10}
   maximum={80}
@@ -59,6 +60,7 @@ import Ruler from 'react-native-animated-ruler';
 |       Prop       |         Default          |    Type     |
 | :--------------: | :----------------------: | :---------: |
 |      style       |            {}            | `ViewStyle` |
+|     vertical     |          false           |  `boolean`  |
 |      width       |      screen's width      |  `number`   |
 |      height      | screen's height \* 0.23  |  `number`   |
 |  onChangeValue   |         () => {}         | `function`  |
@@ -105,7 +107,7 @@ react-native run-ios
 
 ## Credit
 
-This library is based on [react-native-birthday-slider](https://github.com/catalinmiron/react-native-birthday-slider) by [Catalin Miron](https://github.com/catalinmiron)
+This library is based on [awesome Youtube video](https://www.youtube.com/watch?v=vFtDPVnzFLM) by [Catalin Miron](https://twitter.com/mironcatalin)
 
 ## License
 
