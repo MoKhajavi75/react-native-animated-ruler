@@ -29,6 +29,11 @@ type Props = {
   height: number;
 
   /**
+   * Vertical mode
+   */
+  vertical: boolean;
+
+  /**
    * Minimum value of the ruler
    */
   minimum: number;
@@ -265,6 +270,7 @@ class Ruler extends React.Component<Props> {
       unitSize,
       width,
       height,
+      vertical,
       onChangeValue
     } = this.props;
 
@@ -276,7 +282,8 @@ class Ruler extends React.Component<Props> {
             width,
             height,
             backgroundColor,
-            position: 'relative'
+            position: 'relative',
+            transform: vertical ? [{ rotate: '90deg' }] : undefined
           }
         ]}
       >
@@ -321,7 +328,8 @@ class Ruler extends React.Component<Props> {
             style={{
               flexDirection: 'row',
               justifyContent: 'center',
-              alignItems: 'flex-end'
+              alignItems: 'flex-end',
+              transform: vertical ? [{ rotate: '-90deg' }] : undefined
             }}
           >
             {/* Number */}
@@ -364,6 +372,7 @@ class Ruler extends React.Component<Props> {
 
 Ruler.defaultProps = {
   style: {},
+  vertical: false,
   width,
   height: height * 0.23,
   onChangeValue: () => {},
