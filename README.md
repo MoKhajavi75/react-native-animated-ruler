@@ -8,6 +8,9 @@
 
 ---
 
+## Help Needed!
+Sadly, I am too busy to maintain this project anymore. Please contact me if you are interested in contributing and maintaining this package (contact info on [my profile](https://github.com/MohamadKh75))
+
 ## Preview
 
 ![react-native-animated-ruler](assets/react-native-animated-ruler.gif)
