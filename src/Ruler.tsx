@@ -307,7 +307,11 @@ class Ruler extends React.Component<Props> {
             ],
             { useNativeDriver: true }
           )}
-          onMomentumScrollEnd={() => onChangeValue(this.state.value)}
+          onMomentumScrollEnd={() => onChangeValue(this.state.value);
+            this.scrollViewRef.current?.scrollTo({
+              x: this.state.value * this.snapSegment,
+              y: 0,
+            });}
         >
           {this.renderRuler()}
         </Animated.ScrollView>
